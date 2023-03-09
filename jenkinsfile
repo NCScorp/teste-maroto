@@ -1,0 +1,16 @@
+node('master') {
+    stage('Checkout') {
+			
+        timeout(time: 3600, unit: 'SECONDS') {
+            checkout scm
+        }
+    }
+
+    stage('script'){
+        sh 'ls utils/sas.py'
+    }
+
+    stage('Clean') {
+        deleteDir()
+    }
+}
