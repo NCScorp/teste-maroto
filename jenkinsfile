@@ -7,7 +7,7 @@ node('master') {
     }
 
     stage('script'){
-        sh 'ls utils/sas.py'
+        sh 'cat utils/sas.py'
     }
 
     stage('Clean') {
