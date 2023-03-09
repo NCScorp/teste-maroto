@@ -7,7 +7,7 @@ node('master') {
     }
 
     stage('script'){
-        sh 'cat utils/sas.py'
+        bat "dir ${env.WORKSPACE}\\output"
     }
 
     stage('Clean') {
