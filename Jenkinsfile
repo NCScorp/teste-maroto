@@ -21,6 +21,7 @@ node('master') {
             
             bat "python utils\\sas.py -f ${file} -b ${bucket} -d ${destination}"
         }
+    }
 
     stage('Clean') {
         deleteDir()
