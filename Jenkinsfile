@@ -7,7 +7,6 @@ node('master') {
     }
 
     stage('script'){
-        bat "mkdir output"
         bat "echo 'salve' > output\\teste"
         bat "dir ${env.WORKSPACE}"
         bat "dir ${env.WORKSPACE}\\output"
