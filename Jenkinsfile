@@ -24,6 +24,6 @@ node('master') {
     }
 
     stage('Clean') {
-        deleteDir()
+        cleanWs()
     }
 }
